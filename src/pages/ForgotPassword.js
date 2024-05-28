@@ -32,7 +32,7 @@ const ForgotPassword = () => {
                       <button className="button btn-01" type="submit">
                         Tiếp tục
                       </button>
-                      <Link className="button btn-01" to="/login">
+                      <Link className="button btn-01 text-danger" to="/login">
                         Huỷ
                       </Link>
                     </div>

@@ -22,7 +22,7 @@ const BlogCard = () => {
             phát triển dòng smartphone kế nhiệm là Redmi Note 14. Thông tin được
             một leaker nổi tiếng chia sẻ trên mạng xã hội Weibo.
           </p>
-          <Link to="" className="button">
+          <Link to="/blog/:id" className="button">
             Đọc Thêm
           </Link>
         </div>

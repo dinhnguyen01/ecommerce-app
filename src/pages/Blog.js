@@ -2,6 +2,7 @@ import React from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 import BlogCard from "../components/BlogCard";
+
 const Blog = () => {
   return (
     <>
