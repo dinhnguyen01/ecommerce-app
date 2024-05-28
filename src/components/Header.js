@@ -29,7 +29,9 @@ const Header = () => {
           <div className="row align-items-center">
             <div className="col-2">
               <h1>
-                <Link className="text-white">TechStore</Link>
+                <Link to="/" className="text-white">
+                  TechStore
+                </Link>
               </h1>
             </div>
             <div className="col-5">
@@ -49,7 +51,10 @@ const Header = () => {
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between gap-10">
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/compare-product"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="/images/compare.svg" alt="" />
                     <p className="m-0">
                       So sánh <br /> Sản phẩm
@@ -57,7 +62,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/wishlist-product"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="/images/wishlist.svg" alt="" />
                     <p className="m-0">
                       Sản phẩm <br /> Yêu thích
@@ -65,7 +73,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/login"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="/images/user.svg" alt="" />
                     <p className="m-0">
                       Đăng nhập <br /> Tài khoản
@@ -73,7 +84,10 @@ const Header = () => {
                   </Link>
                 </div>
                 <div>
-                  <Link className="d-flex align-items-center gap-10 text-white">
+                  <Link
+                    to="/cart"
+                    className="d-flex align-items-center gap-10 text-white"
+                  >
                     <img src="/images/cart.svg" alt="" />
                     <div className="d-flex flex-column gap-10">
                       <span className="bg-white text-dark text-center">0</span>
@@ -127,7 +141,7 @@ const Header = () => {
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Trang chủ</NavLink>
                     <NavLink to="/store">Cửa hàng</NavLink>
-                    <NavLink to="/">Tin tức</NavLink>
+                    <NavLink to="/blog">Tin tức</NavLink>
                     <NavLink to="/contact">Liên hệ</NavLink>
                   </div>
                 </div>

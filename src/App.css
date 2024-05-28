@@ -54,23 +54,57 @@ a {
   gap: 15px;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .gap-30 {
   gap: 30px;
 }
 
 .button {
-  background-color: white;
-  color: black;
-  font-size: 15px;
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 14px;
   font-weight: 500;
-  padding: 13px 33px;
-  border-radius: 25px;
-  box-shadow: 1px 1px 10px var(--color-131921);
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
 }
 
 .button:hover {
-  background-color: var(--color-bf4800);
-  color: white;
+  background: #f6f9fe;
+  color: #000000;
+}
+
+.btn-01 {
+  width: 125px;
 }
 
 .small-size {
@@ -354,11 +388,11 @@ footer .input-group-text {
 }
 
 .product-content .product-name {
-  font-size: 19px;
+  font-size: 18px;
   color: var(--color-1c1c1b);
   font-weight: 700;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -463,7 +497,7 @@ footer .input-group-text {
 
 .filter-card ul,
 .filter-card .form-check-label {
-  list-style-type: none;
+  list-style: none;
   font-size: 15px;
   line-height: 30px;
   color: var(--color-777);
@@ -490,7 +524,7 @@ footer .input-group-text {
 }
 
 .colors {
-  list-style-type: none;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -587,3 +621,142 @@ footer .input-group-text {
 }
 
 /* Store Ends here */
+
+/* Contact Page */
+
+.contact-inner-wrapper {
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: white;
+  gap: 15px;
+}
+
+.contact-inner-wrapper > div {
+  width: 48%;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: left;
+  margin-top: 0px;
+}
+
+.contact-inner-wrapper form .form-control {
+  background-color: var(--color-f5f5f7);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 10px;
+}
+
+.contact-inner-wrapper form .form-control::placeholder {
+  opacity: 0.6;
+}
+
+.contact-inner-wrapper ul {
+  list-style: none;
+}
+
+.contact-inner-wrapper address,
+.contact-inner-wrapper a,
+.contact-inner-wrapper p {
+  color: var(--color-777);
+}
+
+/* Contact Page ends */
+
+/* Compare product */
+
+.compare-product-card {
+  padding: 20px 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.compare-product-card .cross,
+.wishlist-card .cross {
+  top: 15px;
+  right: 15px;
+  width: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.compare-product-details h5.product-name {
+  font-size: 19px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--color-1c1c1b);
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.compare-product-details h6.product-price {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 600;
+}
+
+.compare-product-card .product-detail {
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-top: 1px solid var(--color-ededed);
+}
+
+.compare-product-card .product-detail h5 {
+  font-size: 16px;
+}
+/* Compare product ends here */
+
+/* Wishlist product */
+
+/* Wishlist product ends */
+
+/* auth card */
+
+.auth-card {
+  padding: 20px;
+  background-color: white;
+  width: 500px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.auth-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+  margin-bottom: 15px;
+}
+
+.auth-card form .form-control {
+  height: 50px;
+  background-color: var(--color-f5f5f7);
+  color: var(--color-131921);
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+}
+
+.auth-card form .form-control::placeholder {
+  opacity: 0.6;
+}
+
+.restore-password-text {
+  color: var(--color-777);
+  font-size: 13px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* auth card ends */

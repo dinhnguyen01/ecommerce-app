@@ -6,7 +6,7 @@ import ReactStars from "react-rating-stars-component";
 import ProductCard from "../components/ProductCard";
 
 const Store = () => {
-  const [grid, setGrid] = useState(4);
+  const [grid, setGrid] = useState(3);
   return (
     <>
       <Meta title="Cửa hàng" />
@@ -16,7 +16,7 @@ const Store = () => {
           <div className="row">
             <div className="col-3">
               <div className="filter-card mb-3">
-                <h3 className="filter-title">Danh mục Cửa Hàng</h3>
+                <h3 className="filter-title">Danh mục sản phẩm</h3>
                 <div>
                   <ul className="ps-0">
                     <li>Điện thoại</li>
@@ -78,7 +78,7 @@ const Store = () => {
                       <label htmlFor="floatingInput1">Đến</label>
                     </div>
                   </div>
-                  <h5 className="sub-title">Màu sắc</h5>
+                  {/* <h5 className="sub-title">Màu sắc</h5>
                   <div>
                     <div className="d-flex flex-wrap">
                       <ul className="colors ps-0">
@@ -94,7 +94,7 @@ const Store = () => {
                         <li></li>
                       </ul>
                     </div>
-                  </div>
+                  </div> */}
                   <h5 className="sub-title">Kích thước</h5>
                   <div>
                     <div className="form-check">
