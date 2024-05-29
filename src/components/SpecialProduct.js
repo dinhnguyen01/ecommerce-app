@@ -1,6 +1,6 @@
 import React from "react";
-import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
+import { Rate } from "antd";
 
 export const SpecialProduct = () => {
   return (
@@ -13,13 +13,7 @@ export const SpecialProduct = () => {
           <div className="product-content">
             <h6 className="product-brand">Apple</h6>
             <h5 className="product-name">iPhone 11 64GB</h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={3}
-              edit={false}
-              activeColor="#ffd700"
-            />
+            <Rate value={3} disabled />
             <p className="product-price">
               <span className="red-p">9.890.000 ₫</span> &nbsp;
               <strike>10.490.000₫</strike>

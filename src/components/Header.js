@@ -1,6 +1,11 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
+import compare_icon from "../images/compare.svg";
+import wishlist_icon from "../images/wishlist.svg";
+import user_icon from "../images/user.svg";
+import cart_icon from "../images/cart.svg";
+import menu_icon from "../images/menu.svg";
 
 const Header = () => {
   return (
@@ -15,7 +20,7 @@ const Header = () => {
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
-                Hotline:{" "}
+                Hotline:
                 <a className="text-white" href="tel:+84 87654321">
                   (+84) 87654321
                 </a>
@@ -55,7 +60,7 @@ const Header = () => {
                     to="/compare-product"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="/images/compare.svg" alt="" />
+                    <img src={compare_icon} alt="" />
                     <p className="m-0">
                       So sánh <br /> Sản phẩm
                     </p>
@@ -66,7 +71,7 @@ const Header = () => {
                     to="/wishlist-product"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="/images/wishlist.svg" alt="" />
+                    <img src={wishlist_icon} alt="" />
                     <p className="m-0">
                       Sản phẩm <br /> Yêu thích
                     </p>
@@ -77,7 +82,7 @@ const Header = () => {
                     to="/login"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="/images/user.svg" alt="" />
+                    <img src={user_icon} alt="" />
                     <p className="m-0">
                       Đăng nhập <br /> Tài khoản
                     </p>
@@ -88,7 +93,7 @@ const Header = () => {
                     to="/cart"
                     className="d-flex align-items-center gap-10 text-white"
                   >
-                    <img src="/images/cart.svg" alt="" />
+                    <img src={cart_icon} alt="" />
                     <div className="d-flex flex-column gap-10">
                       <span className="bg-white text-dark text-center">0</span>
                       <p className="m-0">10.000₫</p>
@@ -113,7 +118,7 @@ const Header = () => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="images/menu.svg" alt="" />
+                      <img src={menu_icon} alt="" />
                       <span className="me-5 d-inline-block">
                         Danh mục Cửa hàng
                       </span>

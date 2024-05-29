@@ -1,7 +1,11 @@
 import React from "react";
-import ReactStars from "react-rating-stars-component";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { Rate } from "antd";
+import wish_icon from "../images/wish.svg";
+import prodcompare_icon from "../images/prodcompare.svg";
+import view_icon from "../images/view.svg";
+import addcard_icon from "../images/add-cart.svg";
 
 const ProductCard = (props) => {
   const { grid } = props;
@@ -14,7 +18,7 @@ const ProductCard = (props) => {
         <div to="" className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
             <Link>
-              <img src="images/wish.svg" alt="wishlist" />
+              <img src={wish_icon} alt="wishlist" />
             </Link>
           </div>
           <div className="product-image">
@@ -34,13 +38,7 @@ const ProductCard = (props) => {
             <h5 className="product-name">
               Apple Watch Series 9 GPS 45mm Sport Band S/M
             </h5>
-            <ReactStars
-              count={5}
-              size={24}
-              value={3}
-              edit={false}
-              activeColor="#ffd700"
-            />
+            <Rate value={3} disabled />
             <p className={`description ${grid === 12 ? "d-block" : "d-none"}`}>
               Apple Watch Series 9 GPS là tân binh mới nhất trong loạt sản phẩm
               công nghệ đình đám vừa được Apple ra mắt cách đây không lâu.
@@ -50,13 +48,13 @@ const ProductCard = (props) => {
           <div className="action-bar position-absolute">
             <div className="d-flex flex-column gap-15">
               <Link>
-                <img src="images/prodcompare.svg" alt="prodcompare" />
+                <img src={prodcompare_icon} alt="prodcompare" />
               </Link>
               <Link>
-                <img src="images/view.svg" alt="view" />
+                <img src={view_icon} alt="view" />
               </Link>
               <Link>
-                <img src="images/add-cart.svg" alt="add_cart" />
+                <img src={addcard_icon} alt="add_cart" />
               </Link>
             </div>
           </div>

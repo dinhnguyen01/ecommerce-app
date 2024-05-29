@@ -28,23 +28,23 @@ const CompareProduct = () => {
                   <h5 className="product-name">iPhone 11 128GB</h5>
                   <h6 className="product-price mb-2">9.990.000 ₫</h6>
                   <div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Hãng sản xuất:</h5>
                       <p className="mb-0">Apple</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Loại sản phẩm:</h5>
                       <p className="mb-0">Điện thoại</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Tồn kho:</h5>
                       <p className="mb-0">18</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Màu sắc:</h5>
                       <p className="mb-0">Xanh lá</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Size:</h5>
                       <p className="mb-0">S M L</p>
                     </div>
@@ -70,23 +70,23 @@ const CompareProduct = () => {
                   <h5 className="product-name">iPhone 11 128GB</h5>
                   <h6 className="product-price mb-2">9.990.000 ₫</h6>
                   <div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Hãng sản xuất:</h5>
                       <p className="mb-0">Apple</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Loại sản phẩm:</h5>
                       <p className="mb-0">Điện thoại</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Tồn kho:</h5>
                       <p className="mb-0">18</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Màu sắc:</h5>
                       <p className="mb-0">Xanh lá</p>
                     </div>
-                    <div className="product-detail">
+                    <div className="product-info">
                       <h5 className="mb-0">Size:</h5>
                       <p className="mb-0">S M L</p>
                     </div>

@@ -13,7 +13,7 @@ const Blog = () => {
           <div className="row">
             <div className="col-3">
               <div className="filter-card mb-3">
-                <h3 className="filter-title">Danh mục Cửa Hàng</h3>
+                <h3 className="filter-title">Danh mục tin tức</h3>
                 <div>
                   <ul className="ps-0">
                     <li>Điện thoại</li>

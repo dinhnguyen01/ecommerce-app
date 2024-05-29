@@ -19,6 +19,7 @@ import RefundPolicy from "./pages/RefundPolicy";
 import ShippingPolicy from "./pages/ShippingPolicy";
 import TermAndCondition from "./pages/TermAndCondition";
 import ScrollToTop from "./components/ScrollToTop";
+import SingleProduct from "./pages/SingleProduct";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="store" element={<Store />} />
+            <Route path="product-detail/:id" element={<SingleProduct />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="about" element={<About />} />

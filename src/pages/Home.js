@@ -5,6 +5,11 @@ import BlogCard from "../components/BlogCard";
 import ProductCard from "../components/ProductCard";
 import SpecialProduct from "../components/SpecialProduct";
 import Meta from "../components/Meta";
+import service_icon from "../images/service.png";
+import service_02_icon from "../images/service-02.png";
+import service_03_icon from "../images/service-03.png";
+import service_04_icon from "../images/service-04.png";
+import service_05_icon from "../images/service-05.png";
 
 const Home = () => {
   return (
@@ -91,35 +96,35 @@ const Home = () => {
             <div className="col-12">
               <div className="services d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center gap-15">
-                  <img src="images/service.png" alt="service" />
+                  <img src={service_icon} alt="service" />
                   <div>
                     <h6>Miễn phí vận chuyển</h6>
                     <p className="mb-0">Tất cả các đơn hàng trên 150k</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-02.png" alt="service" />
+                  <img src={service_02_icon} alt="service" />
                   <div>
                     <h6>Ưu đãi bất ngờ mỗi ngày</h6>
                     <p className="mb-0">Tiết kiệm tới 25%</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-03.png" alt="service" />
+                  <img src={service_03_icon} alt="service" />
                   <div>
                     <h6>Hỗ trợ 24/7</h6>
                     <p className="mb-0">Mua sắm cùng chuyên gia</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-15">
-                  <img src="images/service-04.png" alt="service" />
+                  <img src={service_04_icon} alt="service" />
                   <div>
                     <h6>Giá cả hợp lý</h6>
                     <p className="mb-0">Lấy giá tại nơi sản xuất</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center gap-3">
-                  <img src="images/service-05.png" alt="service" />
+                  <img src={service_05_icon} alt="service" />
                   <div>
                     <h6>Thanh toán an toàn</h6>
                     <p className="mb-0">Đảm bảo an toàn 100%</p>

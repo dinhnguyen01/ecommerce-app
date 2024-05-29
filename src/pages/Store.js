@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BreadCrumb from "../components/BreadCrumb";
 import Meta from "../components/Meta";
 // import { Link } from "react-router-dom";
-import ReactStars from "react-rating-stars-component";
+import { Rate } from "antd";
 import ProductCard from "../components/ProductCard";
 
 const Store = () => {
@@ -78,23 +78,6 @@ const Store = () => {
                       <label htmlFor="floatingInput1">Đến</label>
                     </div>
                   </div>
-                  {/* <h5 className="sub-title">Màu sắc</h5>
-                  <div>
-                    <div className="d-flex flex-wrap">
-                      <ul className="colors ps-0">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                      </ul>
-                    </div>
-                  </div> */}
                   <h5 className="sub-title">Kích thước</h5>
                   <div>
                     <div className="form-check">
@@ -156,13 +139,7 @@ const Store = () => {
                       <h5 className="product-name">
                         Apple Watch Series 9 GPS 45mm Sport Band S/M
                       </h5>
-                      <ReactStars
-                        count={5}
-                        size={20}
-                        value={3}
-                        edit={false}
-                        activeColor="#ffd700"
-                      />
+                      <Rate value={3} disabled />
                       <p className="product-price">9.890.000 ₫</p>
                     </div>
                   </div>
@@ -178,13 +155,7 @@ const Store = () => {
                       <h5 className="product-name">
                         Apple Watch Series 9 GPS 45mm Sport Band S/M
                       </h5>
-                      <ReactStars
-                        count={5}
-                        size={20}
-                        value={3}
-                        edit={false}
-                        activeColor="#ffd700"
-                      />
+                      <Rate value={3} disabled />
                       <p className="product-price">9.890.000 ₫</p>
                     </div>
                   </div>
