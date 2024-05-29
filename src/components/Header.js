@@ -96,7 +96,7 @@ const Header = () => {
                     <img src={cart_icon} alt="" />
                     <div className="d-flex flex-column gap-10">
                       <span className="bg-white text-dark text-center">0</span>
-                      <p className="m-0">10.000₫</p>
+                      <p className="m-0">0₫</p>
                     </div>
                   </Link>
                 </div>
