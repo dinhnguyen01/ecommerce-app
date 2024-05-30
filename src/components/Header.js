@@ -42,6 +42,7 @@ const Header = () => {
             <div className="col-5">
               <div className="input-group">
                 <input
+                  id="search_product"
                   type="text"
                   className="form-control py-2"
                   placeholder="Tìm kiếm sản phẩm..."

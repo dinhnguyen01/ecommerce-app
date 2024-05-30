@@ -20,6 +20,8 @@ import ShippingPolicy from "./pages/ShippingPolicy";
 import TermAndCondition from "./pages/TermAndCondition";
 import ScrollToTop from "./components/ScrollToTop";
 import SingleProduct from "./pages/SingleProduct";
+import Cart from "./pages/Cart";
+import PaymentInfo from "./pages/PaymentInfo";
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="store" element={<Store />} />
             <Route path="product-detail/:id" element={<SingleProduct />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="cart/payment-info" element={<PaymentInfo />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="about" element={<About />} />

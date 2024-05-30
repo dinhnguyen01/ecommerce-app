@@ -11,7 +11,7 @@ const SingleProduct = () => {
       <Meta title="Chi tiết sản phẩm" />
       <BreadCrumb title="Chi tiết sản phẩm" />
       <div className="single-product-wrapper home-wrapper-2 py-4">
-        <div className="container-xxl mt-3">
+        <div className="container-xxl">
           <div className="row">
             <div className="col-md-12">
               <div className="product-detail d-flex justify-content-center">

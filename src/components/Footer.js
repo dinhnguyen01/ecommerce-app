@@ -20,6 +20,7 @@ const Footer = () => {
             <div className="col-7">
               <div className="input-group">
                 <input
+                  id="email_sub"
                   type="text"
                   className="form-control py-2"
                   placeholder="Nhập địa chỉ email..."
