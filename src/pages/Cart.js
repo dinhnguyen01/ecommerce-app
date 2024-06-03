@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const navigate = useNavigate();
-  const handleProceedToPayment = () => {
+  const handleProceedToPayment_info = () => {
     navigate("/cart/payment-info");
   };
   return (
@@ -132,6 +132,98 @@ const Cart = () => {
                     </div>
                   </div>
                 </div>
+                <div className="cart_item-product mt-3 d-flex align-items-start justify-content-start">
+                  <div className="select-prodcut-action w-25 pe-3">
+                    <input
+                      type="checkbox"
+                      className="custom-input float-start"
+                      id="product"
+                    />
+                    <label htmlFor="product">
+                      <img
+                        src="images/watch-p.jpeg"
+                        alt="prod_img"
+                        className="img-fluid"
+                      />
+                    </label>
+                  </div>
+                  <div className="product-info w-75">
+                    <div className="d-flex align-items-start justify-content-between mb-2">
+                      <Link
+                        to="/product-detail/:id"
+                        className="text-black product-name"
+                      >
+                        iPhone 15 128GB | Chính hãng VN/A-Xanh
+                      </Link>
+                      <button className="border-0 bg-transparent">
+                        <FaTrashAlt className="fs-6" />
+                      </button>
+                    </div>
+                    <div className="d-flex align-items-center justify-content-between mb-2">
+                      <p className="product-price mt-3">8.900.000đ</p>
+                      <div className="action d-flex">
+                        <span className="minus d-flex justify-content-center align-items-center">
+                          -
+                        </span>
+                        <input
+                          id="prod_qty"
+                          type="text"
+                          readOnly="readonly"
+                          value={2}
+                        />
+                        <span className="plus d-flex justify-content-center align-items-center">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="cart_item-product mt-3 d-flex align-items-start justify-content-start">
+                  <div className="select-prodcut-action w-25 pe-3">
+                    <input
+                      type="checkbox"
+                      className="custom-input float-start"
+                      id="product"
+                    />
+                    <label htmlFor="product">
+                      <img
+                        src="images/watch-p.jpeg"
+                        alt="prod_img"
+                        className="img-fluid"
+                      />
+                    </label>
+                  </div>
+                  <div className="product-info w-75">
+                    <div className="d-flex align-items-start justify-content-between mb-2">
+                      <Link
+                        to="/product-detail/:id"
+                        className="text-black product-name"
+                      >
+                        iPhone 15 128GB | Chính hãng VN/A-Xanh
+                      </Link>
+                      <button className="border-0 bg-transparent">
+                        <FaTrashAlt className="fs-6" />
+                      </button>
+                    </div>
+                    <div className="d-flex align-items-center justify-content-between mb-2">
+                      <p className="product-price mt-3">8.900.000đ</p>
+                      <div className="action d-flex">
+                        <span className="minus d-flex justify-content-center align-items-center">
+                          -
+                        </span>
+                        <input
+                          id="prod_qty"
+                          type="text"
+                          readOnly="readonly"
+                          value={2}
+                        />
+                        <span className="plus d-flex justify-content-center align-items-center">
+                          +
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {/* product-item */}
               </div>
               {/* stickyBottomBar */}
@@ -144,7 +236,7 @@ const Cart = () => {
                     Mua ngay
                   </button> */}
                   <button
-                    onClick={handleProceedToPayment}
+                    onClick={handleProceedToPayment_info}
                     className="btn-action"
                   >
                     Mua ngay (2)

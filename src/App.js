@@ -22,6 +22,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import SingleProduct from "./pages/SingleProduct";
 import Cart from "./pages/Cart";
 import PaymentInfo from "./pages/PaymentInfo";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path="product-detail/:id" element={<SingleProduct />} />
             <Route path="cart" element={<Cart />} />
             <Route path="cart/payment-info" element={<PaymentInfo />} />
+            <Route path="cart/payment" element={<Payment />} />
             <Route path="blogs" element={<Blog />} />
             <Route path="blog/:id" element={<SingleBlog />} />
             <Route path="about" element={<About />} />

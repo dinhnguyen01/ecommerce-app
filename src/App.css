@@ -1064,7 +1064,8 @@ footer .input-group-text {
   font-size: 18px;
 }
 
-.block-customer-info {
+.block-customer-info,
+.block-payment-info {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
@@ -1074,4 +1075,95 @@ footer .input-group-text {
   font-size: 17px;
 }
 
+/* input with dropdown */
+.input-container {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+  position: relative;
+  z-index: 5;
+}
+
+.input-field:focus {
+  border-bottom-color: #000;
+}
+
+.input-label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 16px;
+  color: #888888;
+  transition: top 0.1s ease;
+  z-index: 1;
+}
+
+.input-label.active {
+  top: -20px;
+  font-size: 14px;
+}
+
+.dropdown-menu_pay-info {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  z-index: 10;
+  list-style: none;
+  border-radius: 5px;
+  padding: 7px;
+  margin-top: 5px;
+}
+
+.dropdown-menu_pay-info li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-menu_pay-info li:hover {
+  background: #f0f0f0;
+}
+
+.block-info {
+  margin-bottom: 125px;
+}
+
+.bottom-bar {
+  background-color: #fff;
+  border: 1px solid rgba(145, 158, 171, 0.239);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  bottom: 0;
+  box-shadow: 0 -4px 20px -1px rgba(40, 124, 234, 0.15);
+  max-width: 648px;
+  padding: 10px 10px 20px;
+  position: fixed;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 20;
+}
+
+.bottom-bar .total-box .title-temp {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.bottom-bar .total-box .price .total {
+  font-size: 18px;
+  color: #d70018;
+  font-weight: 700;
+}
+
+/* input with dropdown ends */
 /* Payment-info ends */

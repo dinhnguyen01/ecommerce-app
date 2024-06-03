@@ -2,12 +2,19 @@ import React from "react";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import Meta from "../components/Meta";
+import InputWithDropdown from "../components/InputWithDropdown";
 
 const PaymentInfo = () => {
   const navigate = useNavigate();
   const handleGoback = () => {
     navigate(-1);
   };
+  const handleProceedToPayment = () => {
+    navigate("/cart/payment");
+  };
+  const options1 = ["Option 1.1", "Option 1.2", "Option 1.3"];
+  const options2 = ["Option 2.1", "Option 2.2", "Option 2.3"];
+  const options3 = ["Option 3.1", "Option 3.2", "Option 3.3"];
   return (
     <>
       <Meta title="Thông tin thanh toán" />
@@ -83,7 +90,9 @@ const PaymentInfo = () => {
                   </div>
                 </div>
                 <div className="block-customer mt-4">
-                  <p className="fs-5 text-uppercase">Thông tin khách hàng</p>
+                  <p className="fs-5 text-uppercase mb-1">
+                    Thông tin khách hàng
+                  </p>
                   <div className="block-customer-info">
                     <ul className="list-group list-group-flush">
                       <li className="list-group-item">Họ tên: DinhZing</li>
@@ -94,6 +103,55 @@ const PaymentInfo = () => {
                         Email: dinhzingpro@gmail.com
                       </li>
                     </ul>
+                  </div>
+                </div>
+                <div className="block-payment mt-4">
+                  <p className="fs-5 text-uppercase mb-1">
+                    Thông tin nhận hàng
+                  </p>
+                  <div className="block-payment-info d-flex flex-wrap">
+                    <InputWithDropdown
+                      className="w-50 p-2"
+                      label="Tỉnh / Thành Phố"
+                      placeholderText="Placeholder 1"
+                      options={options1}
+                    />
+                    <InputWithDropdown
+                      className="w-50 p-2"
+                      label="Quận / Huyện"
+                      placeholderText="Placeholder 2"
+                      options={options2}
+                    />
+                    <InputWithDropdown
+                      className="w-50 p-2"
+                      label="Chọn phường / xã"
+                      placeholderText="Placeholder 3"
+                      options={options3}
+                    />
+                    <InputWithDropdown
+                      className="w-50 p-2"
+                      label="Số nhà, tên đường"
+                      placeholderText="Placeholder 4"
+                      options={[]}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="bottom-bar container mt-auto">
+                  <div className="total-box d-flex justify-content-between align-items-start">
+                    <p className="title-temp">Tổng tiền tạm tính:</p>
+                    <div className="price d-flex flex-column align-items-end">
+                      <span className="total">29.080.000đ</span>
+                    </div>
+                  </div>
+                  <div className="btn-submit mt-2">
+                    <button
+                      onClick={handleProceedToPayment}
+                      className="btn btn-danger d-flex flex-column justify-content-center align-items-center w-100"
+                    >
+                      Tiếp tục
+                    </button>
                   </div>
                 </div>
               </div>
