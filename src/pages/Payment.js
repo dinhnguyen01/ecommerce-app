@@ -281,15 +281,15 @@ const Payment = () => {
               </div>
             </div>
             <div>
-              <div class="bottom-bar container mt-auto">
-                <div class="total-box d-flex justify-content-between align-items-start">
-                  <p class="title-temp">Tổng tiền tạm tính:</p>
-                  <div class="price d-flex flex-column align-items-end">
-                    <span class="total">29.280.000đ</span>
+              <div className="bottom-bar container mt-auto">
+                <div className="total-box d-flex justify-content-between align-items-start">
+                  <p className="title-temp">Tổng tiền tạm tính:</p>
+                  <div className="price d-flex flex-column align-items-end">
+                    <span className="total">29.280.000đ</span>
                   </div>
                 </div>
-                <div class="btn-submit mt-2">
-                  <button class="btn btn-danger d-flex flex-column justify-content-center align-items-center w-100">
+                <div className="btn-submit mt-2">
+                  <button className="btn btn-danger d-flex flex-column justify-content-center align-items-center w-100">
                     Thanh toán
                   </button>
                 </div>
